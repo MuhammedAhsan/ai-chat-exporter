@@ -8,51 +8,29 @@ body:
       value: |
         Ideas genuinely shape what gets built next, so thank you.
 
-        The most useful thing you can do here is **describe the problem before
-        the solution**. A well-described problem often has a better answer than
-        the one either of us thought of first.
+        Only the first field is required — everything else is optional.
 
-        ### 🔒 Never paste a real conversation
-        This issue is public and permanent. If you need to illustrate something,
-        describe its structure or invent example content.
-
-  - type: checkboxes
-    id: preflight
-    attributes:
-      label: Before suggesting
-      options:
-        - label: I searched [existing issues](https://github.com/MuhammedAhsan/ai-chat-exporter/issues?q=is%3Aissue) and this has not already been suggested
-          required: true
-        - label: I checked the [README](https://github.com/MuhammedAhsan/ai-chat-exporter#readme) and this does not already exist
-          required: true
+        **🔒 Please don't paste a real conversation** if you're illustrating
+        something. Issues are public and permanent.
 
   - type: textarea
-    id: problem
-    attributes:
-      label: What problem are you trying to solve?
-      description: >-
-        What are you doing today, and where does it get awkward? Write this even
-        if the solution seems obvious.
-      placeholder: >-
-        I export long research threads to DOCX and then spend ten minutes
-        deleting my own messages by hand, because I only want the answers.
-    validations:
-      required: true
-
-  - type: textarea
-    id: solution
+    id: idea
     attributes:
       label: What would you like the extension to do?
       description: >-
-        Where would it live — the Export tab, Messages, Settings, the editor? What
-        would you click?
+        If you can, say what you're doing today and where it gets awkward — the
+        problem behind the idea often has a better answer than either of us
+        thought of first.
+      placeholder: >-
+        A way to drop my own messages in one click. I export long research
+        threads and only want the answers, so I delete them by hand every time.
     validations:
       required: true
 
   - type: dropdown
     id: area
     attributes:
-      label: Which part of the extension?
+      label: Which part of the extension? *(optional)*
       multiple: true
       options:
         - Export formats (PDF, DOCX, HTML, Markdown, TXT, JSON)
@@ -64,66 +42,19 @@ body:
         - Sharing and clipboard
         - Support for a new chat site
         - Something else
-    validations:
-      required: true
-
-  - type: dropdown
-    id: sites
-    attributes:
-      label: Which chat sites would this affect?
-      multiple: true
-      options:
-        - All supported sites
-        - ChatGPT
-        - Claude
-        - Gemini
-        - Perplexity
-        - DeepSeek
-        - A site that is not supported yet
-    validations:
-      required: true
 
   - type: input
     id: new-site
     attributes:
-      label: If you are asking for a new site, which one?
+      label: Asking for a new site? Which one? *(optional)*
       description: >-
-        The address of the chat page, not the marketing homepage. Each site needs
-        its own adapter, so this is a real piece of work rather than a setting —
-        knowing how many people want a given site is what decides the order.
+        The address of the chat page. Each site needs its own adapter, so how
+        many people ask for a given one is what decides the order.
       placeholder: "https://example.ai/chat/…"
-
-  - type: textarea
-    id: alternatives
-    attributes:
-      label: What do you do instead today?
-      description: >-
-        A workaround, another tool, or doing it by hand. This tells me how much
-        the feature is actually worth.
-
-  - type: dropdown
-    id: importance
-    attributes:
-      label: How much would this matter to you?
-      options:
-        - I would use it every time I export
-        - I would use it regularly
-        - Occasionally useful
-        - Nice to have
-    validations:
-      required: true
 
   - type: textarea
     id: extra
     attributes:
-      label: Anything else
+      label: Anything else? *(optional)*
       description: >-
-        Mockups, examples from other tools, or edge cases you have thought of.
-
-  - type: checkboxes
-    id: privacy-ack
-    attributes:
-      label: Privacy acknowledgement
-      options:
-        - label: I have not included any private conversation content
-          required: true
+        Mockups, how another tool does it, or what you do instead today.

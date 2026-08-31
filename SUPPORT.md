@@ -17,19 +17,14 @@ reports — which are private by design.
 
 ## Before you report a bug
 
-Two minutes here saves a round-trip.
+One thing only, and it takes thirty seconds: some of the most-reported behaviour
+is deliberate and listed under
+**[Known limitations](README.md#known-limitations)** — equations print on one
+line, emoji are dropped from PDFs, Claude conversations get scrolled before being
+read.
 
-**Check [Known limitations](README.md#known-limitations) first.** Some of the most
-reported behaviour is deliberate and documented: equations print on one line,
-emoji are dropped from PDFs (only PDFs), code line numbers are off by default,
-and Claude conversations are scrolled before being read.
-
-**Check you are on the latest version.** Open `chrome://extensions`, find AI Chat
-Exporter, and compare the version against the top of [CHANGELOG.md](CHANGELOG.md).
-
-**Try one other format.** If a PDF export is wrong but the Markdown is fine, the
-problem is in the PDF writer. If every format is wrong, the problem is in reading
-the page. Knowing which halves the search.
+If it isn't one of those, just report it. The form asks for what it needs, and
+most of it is optional.
 
 ---
 
@@ -77,6 +72,6 @@ project than a patch would be. Both live in [Issues](https://github.com/Muhammed
 ## Response times
 
 This is a free extension maintained by one person alongside other work. Issues
-are read, and most get a reply within a week. A report that reproduces cleanly
-gets fixed a great deal faster than one that needs three messages to understand —
-which is what the issue forms are for.
+are read, and most get a reply within a week.
+
+A short report is genuinely welcome. If I need more to go on, I will just ask.
