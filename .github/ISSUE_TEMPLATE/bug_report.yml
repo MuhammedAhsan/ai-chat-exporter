@@ -64,7 +64,7 @@ body:
   - type: textarea
     id: steps
     attributes:
-      label: How can I reproduce it? *(optional)*
+      label: How can I reproduce it? (optional)
       description: >-
         Roughly what you clicked. Also useful: whether it happens every time, and
         whether it used to work.
@@ -72,7 +72,7 @@ body:
   - type: input
     id: versions
     attributes:
-      label: Versions *(optional)*
+      label: Versions (optional)
       description: >-
         Extension version is in `chrome://extensions`.
       placeholder: "Extension 2.7.0, Chrome 141, Windows 11"
@@ -80,7 +80,7 @@ body:
   - type: textarea
     id: extra
     attributes:
-      label: Anything else? *(optional)*
+      label: Anything else? (optional)
       description: >-
         Screenshots (cropped), what kind of content was in the conversation —
         code, tables, equations, images — or console errors from right-clicking
