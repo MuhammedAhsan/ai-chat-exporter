@@ -10,7 +10,7 @@ and threads you are not signed in to.
 
 [Report a bug](https://github.com/MuhammedAhsan/ai-chat-exporter/issues/new?template=bug_report.yml)
 · [Suggest a feature](https://github.com/MuhammedAhsan/ai-chat-exporter/issues/new?template=feature_request.yml)
-· [Ask a question](https://github.com/MuhammedAhsan/ai-chat-exporter/discussions)
+· [Ask a question](https://github.com/MuhammedAhsan/ai-chat-exporter/issues/new?template=question.yml)
 · [Changelog](CHANGELOG.md)
 
 ---
@@ -289,7 +289,7 @@ documented.
 | --- | --- |
 | Something is broken | [**Report a bug**](https://github.com/MuhammedAhsan/ai-chat-exporter/issues/new?template=bug_report.yml) |
 | An idea for the extension | [**Suggest a feature**](https://github.com/MuhammedAhsan/ai-chat-exporter/issues/new?template=feature_request.yml) |
-| A question | [**Discussions**](https://github.com/MuhammedAhsan/ai-chat-exporter/discussions) |
+| A question | [**Ask a question**](https://github.com/MuhammedAhsan/ai-chat-exporter/issues/new?template=question.yml) |
 | A security or privacy vulnerability | [**Report it privately**](https://github.com/MuhammedAhsan/ai-chat-exporter/security/advisories/new) |
 
 > **🔒 Never paste a real conversation into an issue.** Issues are public,

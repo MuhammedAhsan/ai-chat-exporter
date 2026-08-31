@@ -149,7 +149,7 @@ what is collected or transmitted will be stated plainly rather than buried.
 Questions about this policy go through this repository:
 
 - **General questions** —
-  [open a discussion](https://github.com/MuhammedAhsan/ai-chat-exporter/discussions)
+  [open an issue](https://github.com/MuhammedAhsan/ai-chat-exporter/issues/new?template=question.yml)
 - **A privacy problem you have found** — report it privately through
   [GitHub's security advisories](https://github.com/MuhammedAhsan/ai-chat-exporter/security/advisories/new),
   not as a public issue. See [SECURITY.md](SECURITY.md).

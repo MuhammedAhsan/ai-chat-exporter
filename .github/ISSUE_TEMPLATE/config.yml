@@ -4,10 +4,6 @@
 blank_issues_enabled: false
 
 contact_links:
-  - name: 💬 Question, or not sure it is a bug
-    url: https://github.com/MuhammedAhsan/ai-chat-exporter/discussions
-    about: Ask in Discussions. Anything that turns out to be a bug gets moved to an issue.
-
   - name: 🔒 Security or privacy vulnerability
     url: https://github.com/MuhammedAhsan/ai-chat-exporter/security/advisories/new
     about: Report it privately, never as a public issue. This extension reads private conversations.

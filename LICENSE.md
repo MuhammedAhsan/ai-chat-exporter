@@ -151,7 +151,7 @@ protection of any mandatory consumer-protection law of your own country.
 Questions about this licence go through this repository:
 
 - **General questions** —
-  [open a discussion](https://github.com/MuhammedAhsan/ai-chat-exporter/discussions)
+  [open an issue](https://github.com/MuhammedAhsan/ai-chat-exporter/issues/new?template=question.yml)
 - **A security problem** — report it privately through
   [GitHub's security advisories](https://github.com/MuhammedAhsan/ai-chat-exporter/security/advisories/new).
   See [SECURITY.md](SECURITY.md).

@@ -7,7 +7,7 @@ extension. Everything goes through one of four routes.
 | --- | --- |
 | Something is broken | **[Report a bug](https://github.com/MuhammedAhsan/ai-chat-exporter/issues/new?template=bug_report.yml)** |
 | An idea for the extension | **[Suggest a feature](https://github.com/MuhammedAhsan/ai-chat-exporter/issues/new?template=feature_request.yml)** |
-| A question, or you are not sure it is a bug | **[Start a discussion](https://github.com/MuhammedAhsan/ai-chat-exporter/discussions)** |
+| A question, or you are not sure it is a bug | **[Ask a question](https://github.com/MuhammedAhsan/ai-chat-exporter/issues/new?template=question.yml)** |
 | A security or privacy vulnerability | **[Report it privately](https://github.com/MuhammedAhsan/ai-chat-exporter/security/advisories/new)** — see [SECURITY.md](SECURITY.md) |
 
 There is no support email. Every route is here, in the open, except security

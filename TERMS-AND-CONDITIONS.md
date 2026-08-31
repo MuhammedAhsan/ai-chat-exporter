@@ -111,7 +111,7 @@ protection of any mandatory consumer-protection law of your own country.
 Questions about these terms go through this repository:
 
 - **General questions** —
-  [open a discussion](https://github.com/MuhammedAhsan/ai-chat-exporter/discussions)
+  [open an issue](https://github.com/MuhammedAhsan/ai-chat-exporter/issues/new?template=question.yml)
 - **A bug or a feature idea** —
   [open an issue](https://github.com/MuhammedAhsan/ai-chat-exporter/issues/new/choose)
 - **A security problem** — report it privately through

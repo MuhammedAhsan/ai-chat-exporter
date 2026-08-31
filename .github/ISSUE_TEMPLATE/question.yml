@@ -1,0 +1,29 @@
+name: ❓ Question
+description: Ask anything about the extension
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask away — there are no wrong questions here, and if it turns out to be a
+        bug I will relabel it myself.
+
+        **🔒 Please don't paste a real conversation.** Issues are public and
+        permanent.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: What would you like to know?
+      placeholder: >-
+        Does the DOCX export keep table borders when I open it in Google Docs
+        rather than Word?
+    validations:
+      required: true
+
+  - type: input
+    id: context
+    attributes:
+      label: Which site or format, if it matters? (optional)
+      placeholder: "Claude, exporting to DOCX"
