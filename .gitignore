@@ -1,0 +1,30 @@
+# This repository holds documentation only — no source, no build output.
+# These entries exist to keep OS and editor artefacts out of a public repo.
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+.directory
+.Trash-*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local scratch
+/tmp/
+*.log

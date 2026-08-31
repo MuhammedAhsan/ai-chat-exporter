@@ -1,0 +1,21 @@
+# Every report arrives through a form. Blank issues are disabled so that the
+# site/format/version fields — the ones that save a round-trip — cannot be
+# skipped.
+blank_issues_enabled: false
+
+contact_links:
+  - name: 💬 Question, or not sure it is a bug
+    url: https://github.com/MuhammedAhsan/ai-chat-exporter/discussions
+    about: Ask in Discussions. Anything that turns out to be a bug gets moved to an issue.
+
+  - name: 🔒 Security or privacy vulnerability
+    url: https://github.com/MuhammedAhsan/ai-chat-exporter/security/advisories/new
+    about: Report it privately, never as a public issue. This extension reads private conversations.
+
+  - name: 📖 Known limitations
+    url: https://github.com/MuhammedAhsan/ai-chat-exporter#known-limitations
+    about: Single-line equations, emoji dropped from PDFs, Claude scrolling — check here first.
+
+  - name: 🛟 How to get help
+    url: https://github.com/MuhammedAhsan/ai-chat-exporter/blob/HEAD/SUPPORT.md
+    about: What I can help with, and how to report something well.

@@ -1,0 +1,182 @@
+name: 🐛 Bug report
+description: Something in the extension is broken or exports incorrectly
+title: "[Bug]: "
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this.
+
+        ### 🔒 Before you write anything — never paste a real conversation
+
+        This issue will be **public, permanent, and indexed by search engines**.
+        Describe the *structure* instead of pasting the content: *"a table with
+        three columns where the middle cell holds a code span"* tells me exactly
+        what to build a test case from, without publishing anything of yours.
+
+        If you attach a screenshot, crop or blur the text first.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before reporting
+      description: Two minutes here usually saves a round-trip.
+      options:
+        - label: I have read [Known limitations](https://github.com/MuhammedAhsan/ai-chat-exporter#known-limitations) and this is not one of them
+          required: true
+        - label: I am on the latest version (check `chrome://extensions` against the [changelog](https://github.com/MuhammedAhsan/ai-chat-exporter/blob/HEAD/CHANGELOG.md))
+          required: true
+        - label: I searched [existing issues](https://github.com/MuhammedAhsan/ai-chat-exporter/issues?q=is%3Aissue) and this has not been reported
+          required: true
+
+  - type: dropdown
+    id: site
+    attributes:
+      label: Which chat site?
+      description: Where the conversation you were exporting lives.
+      options:
+        - ChatGPT (chatgpt.com or chat.openai.com)
+        - Claude (claude.ai)
+        - Gemini (gemini.google.com)
+        - Perplexity (perplexity.ai)
+        - DeepSeek (chat.deepseek.com)
+        - It happens on more than one site
+        - Not site-specific (popup, settings, editor)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: formats
+    attributes:
+      label: Which export format(s)?
+      description: >-
+        Tick every format you tried. This matters more than it looks: if PDF is
+        wrong but Markdown is fine, the fault is in the PDF writer. If every
+        format is wrong, the fault is in reading the page.
+      multiple: true
+      options:
+        - PDF
+        - DOCX
+        - HTML
+        - Markdown
+        - TXT
+        - JSON
+        - Copy as Markdown
+        - Not an export problem
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Google Chrome
+        - Microsoft Edge
+        - Brave
+        - Opera
+        - Vivaldi
+        - Other Chromium browser
+    validations:
+      required: true
+
+  - type: input
+    id: versions
+    attributes:
+      label: Extension version and browser version
+      description: >-
+        Extension version is in `chrome://extensions`. Browser version is in
+        Help → About.
+      placeholder: "Extension 2.7.0, Chrome 141 on Windows 11"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What the extension actually did.
+      placeholder: >-
+        The PDF exported, but every code block lost its indentation and ran
+        together as one paragraph.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+      description: >-
+        Worth writing out even when it feels obvious — it is often where the
+        real disagreement turns out to be.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: >-
+        Numbered, from opening the conversation. If it only happens with a
+        particular kind of content, say which kind.
+      value: |
+        1. Open a conversation on …
+        2. Click the extension icon
+        3. Click …
+        4. See the problem
+    validations:
+      required: true
+
+  - type: textarea
+    id: content-shape
+    attributes:
+      label: What was in the conversation?
+      description: >-
+        **Describe it, do not paste it.** Which block types were involved — code,
+        tables, equations, images, diagrams, quotes, nested lists? Roughly how
+        many messages? Anything unusual about it?
+      placeholder: >-
+        About 40 messages. The one that breaks has a Python code block of ~30
+        lines followed by a three-column table. No images.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: consistency
+    attributes:
+      label: Does it happen every time?
+      options:
+        - Every time, on every conversation
+        - Every time, but only on this one conversation
+        - Sometimes, unpredictably
+        - Happened once, cannot reproduce it
+        - Started recently — it used to work
+    validations:
+      required: true
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Console errors
+      description: >-
+        Optional but very useful. Right-click the popup → Inspect → Console, then
+        reproduce the problem and paste any red errors. **Check the output for
+        conversation text before pasting it.**
+      render: text
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: >-
+        Screenshots (cropped or blurred), settings you had changed, whether you
+        were using the editor or redaction.
+
+  - type: checkboxes
+    id: privacy-ack
+    attributes:
+      label: Privacy acknowledgement
+      options:
+        - label: I have not included any private conversation content, and any screenshot is cropped or redacted
+          required: true
